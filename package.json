@@ -1,6 +1,6 @@
 {
   "name": "@telida/maplibre-gl-draw-no-drag-mode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "To disable feature drag on simple_select and direct_select modes for simple_select and direct_select modes",
   "main": "dist/index.js",
   "scripts": {
