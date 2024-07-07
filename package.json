@@ -1,11 +1,19 @@
 {
-  "name": "maplibre-gl-draw-no-drag-mode",
+  "name": "@telida/maplibre-gl-draw-no-drag-mode",
   "version": "1.0.0",
   "description": "To disable feature drag on simple_select and direct_select modes\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bfor simple_select and direct_select modes",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build":  "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "telida",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@telida/maplibre-gl-draw": "^1.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3"
+  }
 }
