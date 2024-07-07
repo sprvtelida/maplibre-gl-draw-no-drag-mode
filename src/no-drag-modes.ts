@@ -1,7 +1,7 @@
-const direct_select: any = require('@telida/maplibre-gl-draw/src/modes/direct_select').default;
-const simple_select: any = require('@telida/maplibre-gl-draw/src/modes/simple_select').default;
+const no_drag_direct_select: any = require('@telida/maplibre-gl-draw/src/modes/direct_select').default;
+const no_drag_simple_select: any = require('@telida/maplibre-gl-draw/src/modes/simple_select').default;
 
-direct_select.onDrag = function (state: any, e: any) {
+no_drag_direct_select.onDrag = function (state: any, e: any) {
     if (state.canDragMove !== true) return;
     state.dragMoving = true;
     e.originalEvent.stopPropagation();
@@ -16,11 +16,11 @@ direct_select.onDrag = function (state: any, e: any) {
     state.dragMoveLocation = e.lngLat;
 };
 
-simple_select.onDrag = function (state: any, e: any) {
+no_drag_simple_select.onDrag = function (state: any, e: any) {
     // Do nothing
 };
 
-export default {
-    direct_select,
-    simple_select
+export {
+    no_drag_direct_select,
+    no_drag_simple_select
 };
