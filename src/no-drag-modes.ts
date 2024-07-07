@@ -1,7 +1,6 @@
 const direct_select: any = require('@telida/maplibre-gl-draw/src/modes/direct_select').default;
 const simple_select: any = require('@telida/maplibre-gl-draw/src/modes/simple_select').default;
 
-// Modify the onDrag method of direct_select mode
 direct_select.onDrag = function (state: any, e: any) {
     if (state.canDragMove !== true) return;
     state.dragMoving = true;
@@ -17,7 +16,6 @@ direct_select.onDrag = function (state: any, e: any) {
     state.dragMoveLocation = e.lngLat;
 };
 
-// Modify the onClick method of simple_select mode
 simple_select.onDrag = function (state: any, e: any) {
     // Do nothing
 };
