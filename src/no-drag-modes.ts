@@ -3,8 +3,6 @@ const simple_select: any = require('@telida/maplibre-gl-draw/src/modes/simple_se
 
 // Modify the onDrag method of direct_select mode
 direct_select.onDrag = function (state: any, e: any) {
-    console.log('CustomDirectSelect.onDrag', state, e);
-
     if (state.canDragMove !== true) return;
     state.dragMoving = true;
     e.originalEvent.stopPropagation();
@@ -21,12 +19,7 @@ direct_select.onDrag = function (state: any, e: any) {
 
 // Modify the onClick method of simple_select mode
 simple_select.onDrag = function (state: any, e: any) {
-    console.log('CustomSimpleSelect.onDrag', state, e);
-
-    // Your custom logic here
-
-    // Call the original method if needed
-    // originalSimpleSelectOnClick.call(this, state, e);
+    // Do nothing
 };
 
 export default {
