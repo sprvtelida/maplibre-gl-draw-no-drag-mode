@@ -1,9 +1,5 @@
 import MapLibreDraw from "@telida/maplibre-gl-draw";
 
-export function helloWorld(): string {
-    return 'Hello, world!';
-}
-
 class NoDragDirectMode extends (MapLibreDraw.modes.direct_select as any) {
     onDrag(state: any, e: any) {
         console.log('CustomDirectSelect.onDrag', state, e);
@@ -22,3 +18,5 @@ class NoDragDirectMode extends (MapLibreDraw.modes.direct_select as any) {
         state.dragMoveLocation = e.lngLat;
     }
 }
+
+export default NoDragDirectMode;
